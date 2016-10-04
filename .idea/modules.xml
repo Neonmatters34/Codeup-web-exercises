@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Codeup web exercises.iml" filepath="$PROJECT_DIR$/Codeup web exercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Personal Projects/Personal Projects.iml" filepath="$PROJECT_DIR$/../Personal Projects/Personal Projects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Personal Site/Personal Site.iml" filepath="$PROJECT_DIR$/Personal Site/Personal Site.iml" />
+    </modules>
+  </component>
+</project>

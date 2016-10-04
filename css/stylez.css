@@ -1,0 +1,55 @@
+h2 {
+
+    color: fuchsia;
+    font-family: Helvetica;
+    alignment: center;
+}
+
+#title {
+justify-content: center;
+background-color: aquamarine;
+    width:500px;
+    height:5000px;
+    text-align: center;
+    margin:auto;
+
+}
+#left {
+    float:left;
+    height:50px;
+    width:175px;
+    background-color: white;
+    position: absolute;
+    top:100px;
+}
+
+#left2 {
+    float:left;
+    height:10px;
+    width:150px;
+    background-color: white;
+    position: absolute;
+    top:155px;
+}
+
+#right {
+    float:right;
+    height:50px;
+    width:175px;
+    background-color: white;
+    position: relative;
+    top:100px;
+    clear: both;
+}
+
+#right2 {
+    float: right;
+    height: 10px;
+    width: 150px;
+    background-color: white;
+    position: relative;
+    top: 155px;
+    clear: both;
+}
+
+

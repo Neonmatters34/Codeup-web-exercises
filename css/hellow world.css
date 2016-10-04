@@ -1,0 +1,83 @@
+h2{
+    text-decoration: underline;
+    color: fuchsia;
+}
+body{
+    background-color: aquamarine;
+    font-family: "Helvetica Neue";
+}
+
+div{
+    background-image:url("../images/H7BrK0f.jpg");
+    height:400px;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:auto;
+    text-align: center;
+    word-wrap: break-word;
+
+
+
+
+}
+
+#hotwheels{
+    max-width: 200px;
+    max-height: 150px;
+}
+
+#2nddiv{
+
+    background-image:url("../images/injoypride-1811.jpg");
+    height:500px;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    margin-top: 50px;
+    position: static;
+    padding-top: 150px;
+}
+
+p{
+    color: white;
+}
+
+ol{
+    list-style: lower-greek;
+    list-style-position: inside;
+}
+
+ul{
+    list-style: lower-roman;
+    list-style-position: inside;
+}
+
+table{
+    margin-left: .5%;
+    margin-bottom: auto;
+    padding: 1%;
+    background-color: aquamarine;
+
+}
+td{
+    background-color: fuchsia;
+    border:1px solid;
+    padding:1px;
+}
+
+tr{
+    padding:2px;
+    font-size: 2em;
+}
+
+a:hover{
+    color: greenyellow;
+
+}
+
+a:visited{
+    color: crimson;
+}
