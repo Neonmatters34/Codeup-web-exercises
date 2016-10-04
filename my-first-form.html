@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>Log in</title>
     <link rel="stylesheet" href="css/stylez.css">
 
@@ -10,17 +11,15 @@
     <body>
         <h2>L o g i n</h2>
         <form method="POST" action="http://requestb.in/1nos5ev1">
-            <p>
+            <div class="form-group">
                 <label for="username">Username</label>
-                <input id="username" name="username" type="text" required autofocus placeholder="username">
-            </p>
-            <p>
+                <input id="username" class="form-control" name="username" type="text" required autofocus placeholder="username">
+            </div>
+            <div class="form-group">
                 <label for="password">Password</label>
-                <input id="password" name="password" type="password" required placeholder="password">
-            </p>
-            <p>
-                <button type="submit" name="submit">submit</button>
-            </p>
+                <input id="password" name="password" type="password" class="form-control" required placeholder="password">
+            </div>
+                <button type="submit" class="btn btn-default" name="submit">submit</button>
         </form>
 
         <h2>C o m p o s e E-mail</h2>
@@ -139,7 +138,7 @@
         </form>
 
 
-
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </body>
 </div>
 </html>
