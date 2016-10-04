@@ -2,3 +2,5 @@
 .idea
 *.iml
 **.DS_Stores
+.DS_Store
+
