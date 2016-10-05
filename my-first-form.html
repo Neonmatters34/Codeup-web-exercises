@@ -9,7 +9,7 @@
 </head>
 <div>
     <body>
-    <div class="container-fluid text-center">
+    <div name="login-block" class="container-fluid text-center">
         <h2>L o g i n</h2>
         <form class="form-horizontal" method="POST" action="http://requestb.in/1nos5ev1">
             <div class="form-group">
@@ -28,13 +28,13 @@
                     <input id="password" name="password" type="password" class="form-control" required placeholder="password">
                 </div>
             </div>
-                <button type="submit" class="btn btn-default" name="submit">submit</button>
+            <button type="submit" class="btn btn-default" name="submit">submit</button>
         </form>
     </div>
 
     <div class="container-fluid text-center">
         <h2>C o m p o s e E-mail</h2>
-        <form class="form-horizontal" method="POST" action="http://requestb.in/1nos5ev1">
+        <form class="form-horizontal " method="POST" action="http://requestb.in/1nos5ev1">
             <div class="form-group">
                 <div class="col-sm-1 col-sm-offset-3">
                     <label for="To">To</label>
@@ -75,123 +75,126 @@
             <button class="btn btn-default" type="submit" name="send">Send</button>
         </form>
     </div>
+
+
+    <form class="col-sm-4 col-sm-offset-4">
         <h2>M u l t i p l e choice test</h2>
-        <form>
-            <div class="radio">
-                <p>Who steals from Creed Bratton?</p>
-                <label>
-                    <input type="radio" name="q1" value="Nobody">
-                    Nobody, that's who!
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="q1" value="Everybody">
-                    Everybody
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="q1" value="Jim">
-                    Jim
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="q1" value="Dwight">
-                    Dwight
-                </label>
-            </div>
+        <div class="radio">
+            <p>Who steals from Creed Bratton?</p>
+            <label>
+                <input type="radio" name="q1" value="Nobody">
+                Nobody, that's who!
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="q1" value="Everybody">
+                Everybody
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="q1" value="Jim">
+                Jim
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="q1" value="Dwight">
+                Dwight
+            </label>
+        </div>
 
 
-            <p>How old is Creed Bratton?</p>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="q2" value="45">
-                    45
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="q2" value="62">
-                    62
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="q2" value="50">
-                    50
-                </label>
-            </div>
-            <p>Who was the last person to steal from Creed Bratton?</p>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="q3" value="The IRS">
-                    The IRS
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="q3" value="Creed Bratton">
-                    Creed Bratton
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="q2" value="30">
-                    30
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="q3" value="Jim">
-                    Jim
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="q3" value="Ringo Star">
-                    Ringo Star
-                </label>
-            </div>
+        <p>How old is Creed Bratton?</p>
+        <div class="radio">
+            <label>
+                <input type="radio" name="q2" value="45">
+                45
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="q2" value="62">
+                62
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="q2" value="50">
+                50
+            </label>
+        </div>
+        <p>Who was the last person to steal from Creed Bratton?</p>
+        <div class="radio">
+            <label>
+                <input type="radio" name="q3" value="The IRS">
+                The IRS
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="q3" value="Creed Bratton">
+                Creed Bratton
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="q2" value="30">
+                30
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="q3" value="Jim">
+                Jim
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="q3" value="Ringo Star">
+                Ringo Star
+            </label>
+        </div>
 
-            <p>Who are the top people on the office?</p>
-            <div class="radio">
-                <label><input type="checkbox" id="character1" name="c[]" value="Dwight">Dwight</label>
-            </div>
-            <div class="radio">
-                <label><input type="checkbox" id="character2" name="c[]" value="Jim">Jim</label>
-            </div>
-            <div class="radio">
-                <label><input type="checkbox" id="character3" name="c[]" value="Creed">Creed</label>
-            </div>
-            <div class="radio">
-                <label><input type="checkbox" id="character4" name="c[]" value="Pam">Pam</label>
-            </div>
-            <div class="radio">
-                <label><input type="checkbox" id="character5" name="c[]" value="Toby">Toby</label>
-            </div>
+        <p>Who are the top people on the office?</p>
+        <div class="radio">
+            <label><input type="checkbox" id="character1" name="c[]" value="Dwight">Dwight</label>
+        </div>
+        <div class="radio">
+            <label><input type="checkbox" id="character2" name="c[]" value="Jim">Jim</label>
+        </div>
+        <div class="radio">
+            <label><input type="checkbox" id="character3" name="c[]" value="Creed">Creed</label>
+        </div>
+        <div class="radio">
+            <label><input type="checkbox" id="character4" name="c[]" value="Pam">Pam</label>
+        </div>
+        <div class="radio">
+            <label><input type="checkbox" id="character5" name="c[]" value="Toby">Toby</label>
+        </div>
 
-            <p>This is a question</p>
-            <label for="answer">Answer</label>
-            <select name="answer" id="answer" class="form-control">
-                <option value="1">The first answer</option>
-                <option selected value="2">The second Answer</option>
-            </select>
+        <p>This is a question</p>
+        <label for="answer">Answer</label>
+        <select name="answer" id="answer" class="form-control">
+            <option value="1">The first answer</option>
+            <option selected value="2">The second Answer</option>
+        </select>
 
-            <button class="btn btn-default" type="submit">Send it homie!</button>
-        </form>
+        <button class="btn btn-default" type="submit">Send it homie!</button>
+    </form>
+
+    <form class="col-sm-4 col-sm-offset-4" method="post" action="http://requestb.in/1nos5ev1">
         <h2>S e l e c t Testing</h2>
-        <form method="post" action="http://requestb.in/1nos5ev1">
-            <p>This is a question</p>
-            <label for="answer">Answer</label>
-            <select class="form-control" name="answer" id="answer-2">
-                <option value="1">The first answer</option>
-                <option selected value="2">The second Answer</option>
-            </select>
-            <button class="btn btn-default" type="submit">Submit it yo</button>
-        </form>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <p>This is a question</p>
+        <label for="answer">Answer</label>
+        <select class="form-control" name="answer" id="answer-2">
+            <option value="1">The first answer</option>
+            <option selected value="2">The second Answer</option>
+        </select>
+        <button class="btn btn-default" type="submit">Submit it yo</button>
+    </form>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </body>
 </div>
 </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+    <link href="css/pizza.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <div class="container-fluid text-center">
+        <h1>SMPLE PZZA</h1>
+        <span>PZZA made SMPLE</span>
+    </div>
+</header>
+<form class="col-sm-6 col-sm-offset-3" method="post" action="">
+    <div class="panel panel-defaul text-center">
+            <div class="form-group">
+                <h2>Pizza Size</h2>
+                <div class="row center-block">
+                        <img class="col-sm-2 col-sm-offset-5" src="images/pizza-slice.png">
+                </div>
+                    <label class="form-check-inline" for="12in">
+                        <input class="form-check-input" type="radio" id="12in" name="size">
+                        12"
+                    </label>
+                    <label class="form-check-inline" for="14in">
+                        <input class="form-check-input" type="radio" id="14in" name="size">
+                        14"
+                    </label>
+                    <label class="form-check-inline" for="16in">
+                        <input class="form-check-input" type="radio" id="16in" name="size">
+                        16"
+                    </label>
+                </div>
+
+            <h2>Pizza Toppings</h2>
+            <div class="form-group">
+                <select class="form-control">
+                    <option disabled selected>Topping</option>
+                    <option>Pepperoni</option>
+                    <option>Canadian Bacon</option>
+                    <option>Supreme</option>
+                    <option>Veggie Supreme</option>
+                </select>
+            </div>
+            <div class="checkbox">
+                <h2>Make it Vegan?</h2>
+                <label>
+                    <input class="checkbox" type="checkbox" value="yes">
+                    Yaas!
+                </label>
+            </div>
+        <button class="btn btn-danger" type="submit">Get me Pizza!</button>
+    </form>
+</div>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+</html>
