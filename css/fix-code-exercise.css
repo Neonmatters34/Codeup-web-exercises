@@ -1,0 +1,46 @@
+html{
+    position: absolute;
+    height: 100%;
+}
+
+body{
+margin: 0px;
+padding: 0px;
+font-family: 'Trebuchet MS',verdana, sans-serif;
+    position: relative;
+height:100%;
+width: 100%;
+
+}
+
+.menuLink{
+    text-align: center;
+    padding: 5px;
+}
+
+#menu {
+    width:20%;
+    background-color: #999f8e;
+    float: left;
+    position: relative;
+    vertical-align: top;
+    height: 100%;
+}
+
+#menu-in{
+position: relative;
+    top:3%;
+}
+
+#content{
+width:75%;
+vertical-align: top;
+background-color: #d2d8c7;
+    position: relative;
+    float: left;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+
+    height: 100%;
+
+}
