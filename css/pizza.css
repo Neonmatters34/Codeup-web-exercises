@@ -1,6 +1,18 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway:300';
 
-html body{
-    font-family:"Raleway", sans-serif;
+html body {
+    font-family: "Raleway", sans-serif;
+    background: url("../images/-pattern.png");
+    background-size: cover;
 
+}
+
+
+#login{
+    margin::300px;
+}
+
+#user{
+    border:30px;
+    margin-top: 80px;
 }

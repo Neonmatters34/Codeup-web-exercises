@@ -1,64 +1,152 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
-    <link href="css/pizza.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<header>
-    <div class="container-fluid text-center">
-        <h1>SMPLE PZZA</h1>
-        <span>PZZA made SMPLE</span>
-    </div>
-</header>
-<form class="col-sm-6 col-sm-offset-3" method="post" action="">
-    <div class="panel panel-defaul text-center">
-            <div class="form-group">
-                <h2>Pizza Size</h2>
-                <div class="row center-block">
-                        <img class="col-sm-2 col-sm-offset-5" src="images/pizza-slice.png">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+        <link href="css/pizza.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>SMPLE PZZA</title>
+    </head>
+    <body>
+    <header><!-- SMPLE PZZA and button on same row PZZA made SMPLE on second row. button needs padding adjusted-->
+        <div class="container-fluid text-center">
+            <div class="row"><!---row for header and modal trigger--->
+                <div class="col-sm-4 col-sm-offset-4">
+                    <h1>SMPLE PZZA</h1>
                 </div>
-                    <label class="form-check-inline" for="12in">
-                        <input class="form-check-input" type="radio" id="12in" name="size">
-                        12"
-                    </label>
-                    <label class="form-check-inline" for="14in">
-                        <input class="form-check-input" type="radio" id="14in" name="size">
-                        14"
-                    </label>
-                    <label class="form-check-inline" for="16in">
-                        <input class="form-check-input" type="radio" id="16in" name="size">
-                        16"
-                    </label>
+                <div class="col-sm-4">
+                    <button id="user" type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    </button><!--modal trigger-->
                 </div>
+            </div>
+            <div class="row"><!---------for the sub-header "PZZA made SMPLE"---->
+                <div class="col-sm-12">
+                    <h4>PZZA made SMPLE</h4>
+                </div>
+            </div><!---- modal within a modal inbound. Address and delivery info. Payment modal---->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="mymodalLabel">Delivery info</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-4 col-sm-offset-2 form-group">
+                                    <label for="fname">First Name</label>
+                                    <input type="text" class="form-control" id="fname" placeholder="First">
+                                </div>
+                                <div class="col-sm-4 form-group">
+                                    <label for="lname">Last Name</label>
+                                    <input type="text" class="form-control" id="lname" placeholder="Last">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-3 form-group">
+                                    <label for="phone">Phone #</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="#">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-8 col-sm-offset-2 form-group">
+                                    <label for="address">Address</label>
+                                    <input type="text" class="form-control" id="address" placeholder="address">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-8 col-sm-offset-2 form-group">
+                                    <label for="city">City</label>
+                                    <input type="text" class="form-control" id="city" placeholder="city">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-sm-3 col-sm-offset-3">
+                                    <label for="state">State</label>
+                                    <input type="text" class="form-control" id="state" placeholder="state">
+                                </div>
+                                <div class="form-group col-sm-3">
+                                    <label for="zip">Zip code</label>
+                                    <input type="number" class="form-control" id="zip" placeholder="zip">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <form action="" method="POST">
+                                    <script
+                                            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                            data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+                                            data-amount="2000"
+                                            data-name="SMPLEZA.com"
+                                            data-description="SMPLE PZZA"
+                                            data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                                            data-locale="auto"
+                                            data-zip-code="true">
+                                    </script>
+                                </form>
+                                <button type="submit" class="btn btn-default" data-dismiss="modal">Save</button>
 
-            <h2>Pizza Toppings</h2>
-            <div class="form-group">
-                <select class="form-control">
-                    <option disabled selected>Topping</option>
-                    <option>Pepperoni</option>
-                    <option>Canadian Bacon</option>
-                    <option>Supreme</option>
-                    <option>Veggie Supreme</option>
-                </select>
+                            </div>
+                        </form>
+                </div>
             </div>
-            <div class="checkbox">
-                <h2>Make it Vegan?</h2>
-                <label>
-                    <input class="checkbox" type="checkbox" value="yes">
-                    Yaas!
-                </label>
-            </div>
-        <button class="btn btn-danger" type="submit">Get me Pizza!</button>
+        </div>
+
+    </header>
+    <!----- end of header and modal section--------->
+    <!---body form. submit button not linked yet---->
+    <form class="col-sm-6 col-sm-offset-3" method="post" action="">
+        <div class="panel panel-defaul text-center">
+            <div class="panel-body">
+            <!---- pizza Sizes----->
+                <div class="form-group">
+                    <h2>Pizza Size</h2>
+                    <div class="row center-block">
+                            <img class="img-responsive col-sm-2 col-sm-offset-5" src="images/pizza-slice.png">
+                    </div>
+                        <label class="form-check-inline" for="12in">
+                            <input class="form-check-input" type="radio" id="12in" name="size">
+                            12"
+                        </label>
+                        <label class="form-check-inline" for="14in">
+                            <input class="form-check-input" type="radio" id="14in" name="size">
+                            14"
+                        </label>
+                        <label class="form-check-inline" for="16in">
+                            <input class="form-check-input" type="radio" id="16in" name="size">
+                            16"
+                        </label>
+                </div>
+    <!---- Pizza toppings---->
+                <h2>Pizza Toppings</h2>
+                <div class="form-group">
+                    <select class="form-control">
+                        <option disabled selected>Topping</option>
+                        <option>Pepperoni</option>
+                        <option>Canadian Bacon</option>
+                        <option>Supreme</option>
+                        <option>Veggie Supreme</option>
+                    </select>
+                </div>
+        <!--------- toppings end. checkbox begin----->
+                <div class="checkbox">
+                    <h2>Make it Vegan?</h2>
+                    <label>
+                        <input class="checkbox" type="checkbox" value="yes">
+                        Yaas!
+                    </label>
+                </div>
+          <!------- checkbox end. Submit button begin------>
+            <button class="btn btn-danger btn-lg" type="submit">Get me Pizza!</button>
+            </div><!-----closes panel body----->
+        </div><!-----closes panel ----->
     </form>
-</div>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-</body>
-</html>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+    </body>
+    </html>
