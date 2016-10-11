@@ -25,7 +25,7 @@ var georgeTotal = 320;
 var customerThree = "George";
 
 if(cameronTotal>200){
-    console.log(customerOne+" total before discount: $" + cameronTotal + ". Total after discount: $" + (cameronTotal*afterDiscount))
+    console.log(customerOne+" total before discount: $" + cameronTotal + ". Total after discount: $ " + (cameronTotal*afterDiscount))
 }
 else{
     console.log(customerOne+" total: $" + cameronTotal + ". No discount")}

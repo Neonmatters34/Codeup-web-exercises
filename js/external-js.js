@@ -3,3 +3,7 @@
  */
 "use strict";
 console.log("Hello from external Javascript");
+
+var string= "2";
+
+string.repeat(4);
