@@ -28,6 +28,7 @@ function average3grades(){
 function genericGradesAverage(){
     var sum = 0;
     var gradeCounter = 0;
+    var addAnother;
     do {
         var getGrade;
         getGrade = Number(prompt("Enter grade"));
@@ -35,7 +36,7 @@ function genericGradesAverage(){
             getGrade = Number(prompt("Please input a numeric grade."))
         }
         sum = sum + getGrade;
-        var addAnother = confirm("add another grade")
+        addAnother = confirm("add another grade")
         ++gradeCounter;
 
 
