@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DOM: Query and Modify</title>
+</head>
+<body>
+
+<h1 id="main-header">Hello World!</h1>
+<ul>
+    <li class="odd" data-dbid="1">Item 1</li>
+    <li class="even" data-dbid="2">Item 2</li>
+    <li class="odd" data-dbid="3">Item 3</li>
+    <li class="even" data-dbid="4">Item 4</li>
+    <li class="odd" data-dbid="5">Item 5</li>
+</ul>
+<h2 id="sub-header">Hello Again.</h2>
+<p class="sub-paragraph">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+    aliquip ex ea commodo consequat. Duis aute irure dolor in
+    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+    culpa qui officia deserunt mollit anim id est laborum.
+</p>
+<button type="button">Change Header</button>
+<button type="button">Blue?</button>
+<button type="button">Grey List Stripes?</button>
+<button type="button"> gg EZ</button>
+
+<script>
+        "use strict";
+        // TODO: Uncomment next line and get the main header element by id
+        function changeHeader() {
+            var mainHeader = document.getElementById('main-header');
+            var changeMainHeader = mainHeader.innerHTML = "Javascript is Cool";
+            changeMainHeader;
+        }
+        var buttons = document.getElementsByTagName('button');
+        buttons[0].addEventListener('click', changeHeader);
+
+        // TODO: Uncomment the next line and get the sub header element by id
+        function subHeaderColor() {
+            var subHeader = document.getElementById('sub-header');
+           var subColor = subHeader.style.color = "blue";
+            subColor;
+        }
+        buttons[1].addEventListener('click', subHeaderColor);
+
+
+        // TODO: Uncomment the next line and get all list items
+        var listItems = document.getElementsByTagName("li");
+
+        function everyOtherGrey() {
+            for (var i = 0; i < listItems.length; i++) {
+                if (i % 2 == 0){
+                  var toGrey = listItems[i].style.color = "grey";
+                    toGrey;
+                }
+            }
+
+        }
+        buttons[2].addEventListener('click', everyOtherGrey);
+
+
+       /* for (var i = 0; i < listItems.length;i++){
+            if (listItems.length[i]==1){
+                listItems.getAttribute("data-dbid")
+            }
+        }*/
+
+
+
+        // TODO: Uncomment the next line and get all elements with class name sub-paragraph
+        function changeParagraph() {
+            var subParagraphs = document.getElementsByClassName("sub-paragraph");
+            var mission = subParagraphs[0].innerHTML = "Mission Accomplished!";
+            mission;
+        }
+
+    buttons[3].addEventListener('click', changeParagraph);
+
+</script>
+</body>
+</html>

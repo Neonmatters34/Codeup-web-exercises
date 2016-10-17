@@ -1,6 +1,7 @@
 /**
  * Created by Matt on 10/12/16.
  */
+
 var namesArray = ['john', 'paul', 'ringo', 'george', 'yoko'];
 
 function capitalizeFirstLettersOfArray(testArray) {
@@ -21,13 +22,13 @@ capitalizeFirstLettersOfArray(namesArray);
 
 var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 function sumOfNumbersInArray(numbersArray) {
-    var sum = 0;
+    var product = 1;
 
 numbersArray.forEach(function (element) {
-    sum += element;
+    product *= element;
     });
     console.log('This function is adding an array of numbers from 1-10 together.')
-    console.log(sum);
+    console.log(product);
 }
 
 sumOfNumbersInArray(numbers);

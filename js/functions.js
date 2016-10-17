@@ -33,3 +33,32 @@
 // The function should use the ternary operator to log a message.
 // The log should tell the number passed in and whether it is odd or not.
 // TODO: Call the function 'isOdd' passing the variable 'random' as a parameter.
+
+
+var arrayOfNumbers = [1, 2, 3, 4, 5];
+for(var i = 0; i < arrayOfNumbers.length; i++) {
+    console.log("The element at index " + i + " is " + arrayOfNumbers[i]);
+}
+
+arrayOfNumbers.forEach(function(element, index, array) {
+    console.log("The element at index " + index + " is " + element);
+});
+
+
+newArray = [];
+[1, 2, 3, 4, 5].forEach(function(element, index, array){
+    newArray.push(element + 1);
+
+});q
+
+arrayOfEvens = [];
+[1, 2, 3, 4, 5].forEach(function (element, index, array) {
+    if(isEven(element)){
+        arrayOfEvens.push(element);
+    }
+});
+
+var sum = 0;
+[1, 2, 3, 4, 5].forEach(function (element, array) {
+    sum += element;
+});
