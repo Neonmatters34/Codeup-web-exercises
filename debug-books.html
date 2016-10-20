@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programming books books</title>
+</head>
+<body>
+<h1>See your friend's books</h1>
+<form>
+    <label for="friend">Choose</label>
+    <select id="friend" name="friend" class="friend">
+        <option value="">Friend</option>
+    </select>
+    <input type="button" value="Search">
+</form>
+<div id="books"></div>
+<script>
+   /* var friends = [
+        {name: 'Oliver', books: ['Ansible for DevOps', 'Servers for hackers']},
+        {name: 'Barry', books: ['Working effectively with unit tests', '50 quick ideas for your tests']},
+        {name: 'Jessica', books: ['Understanding the 4 rules of simple design', 'Principles of package design']},
+        {name: 'Clark', books: ['Selling test driven projects']}
+    ];
+    var friend = document.getElementsByClassName('friend');
+    var option = document.getElementsByTagName('option');
+    friends.forEach(function (friend, i) {
+        option[option.length] = '<option value="' + i + '">' + friends.name[i] + '</option>';
+    });
+    friend.innerText = options;*/
+
+    var friends = [
+        {name: 'Oliver', books: ['Ansible for DevOps', 'Servers for hackers']},
+        {name: 'Barry', books: ['Working effectively with unit tests', '50 quick ideas for your tests']},
+        {name: 'Jessica', books: ['Understanding the 4 rules of simple design', 'Principles of package design']},
+        {name: 'Clark', books: ['Selling test driven projects']}
+    ];
+    var sel = document.getElementById('friend');
+    for(var i = 0; i < friends.length; i++) {
+        var opt = document.createElement('option');
+        console.log(opt);
+        opt.innerHTML = friends[i].name /*+ ": " + friends[i].books*/;
+        opt.value = friends[i];
+        sel.appendChild(opt);
+        if (opt.innerHTML = friends[i].name){
+            var bookz = document.getElementById('books');
+            bookz.innerHTML = friends[i].books;
+        }
+    }
+  /* var dropButton = document.getElementsByTagName('option');
+    dropButton.addEventListener('click',function(){
+        if (opt.innerHTML = friends[i].name){
+        var bookz = document.getElementById('books');
+        bookz.innerHTML = friends[i].books;
+    }})
+*/
+</script>
+</body>
+</html>
+
