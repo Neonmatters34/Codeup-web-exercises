@@ -10,6 +10,192 @@
     }
 }
 
+.container{
+    position: absolute;
+    float: right;
+    width: 77%;
+    height: 50%;
+    z-index: -1;
+}
+.image{
+    background-image: url("../images/cobweb.png");
+    position: relative;
+    height: 300px;
+    width: 300px;
+    left: 100%;
+    top: -31%;
+    margin:0px;
+}
+
+.image-two{
+    background-image: url("../images/Layer 1.png");
+    position: relative;
+    float: left;
+    z-index: -1;
+    width: 131%;
+    height: 500px;
+    top:40%;
+    background-repeat: no-repeat;
+}
+
 #displayField {
     padding-top: 30px;
+
+    color: white;
 }
+
+#multiply{
+    padding-right: 15px;
+}
+#add{
+    padding-right: 13px;
+}
+#result{
+    padding-right:13px;
+}
+#clear{
+    padding-bottom: 80%;
+    float: none;
+    position: relative;
+    left: 42.9%;
+    margin-right: 0px;
+    margin-bottom: 0;
+
+}
+#zero{
+    float: left ;
+}
+#divide{
+    float: left;
+}
+#result{
+    float: left;}
+#fourRow{
+    position: relative;
+    right:10%;
+}
+#footer{
+
+    height: 30%;
+    background-color: #EC5840;
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    bottom:1px;
+    float: none;
+    z-index: -1;
+}
+
+/*-----------------------thieved---------------------------*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url('http://images.all-free-download.com/images/graphiclarge/starry_night_192398.jpg');
+
+}
+
+.ghost{
+    width: 250px;
+    height:300px;
+    position:relative;
+    left: 40%;
+    margin-top: 0;
+    animation: ghost_bottom_float 2.5s infinite;
+    animation-fill-mode:both;
+}
+
+.ghost_head{
+    width:100%;
+    height:250px;
+    border-radius:50% 50% 0 0;
+    background-color:#fff;
+}
+
+.ghost_eye{
+    position:absolute;
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    top:70px;
+    background:#111;
+}
+
+.ghost_left_eye{
+    left:70px;
+    transform: scale(.70);
+}
+
+.ghost_right_eye{
+    right:70px;
+}
+
+.ghost_smile{
+    position:absolute;
+    width:40px;
+    height:20px;
+    border-radius: 7px 7px 50% 50%;
+    background:#000;
+    top: 109px;
+    left: 106px;
+}
+
+.ghost_bottom{
+    width:100%;
+    height:1px;
+    background:#fff;
+}
+
+.ghost_floaty{
+    width:20%;
+    height:60px;
+    background:#fff;
+    float: left;
+    border-radius:0 0 50% 50%;
+
+    animation: ghost_bottom_float 2.5s infinite;
+    animation-fill-mode:both;
+}
+
+
+@keyframes ghost_bottom_float {
+    0% {
+        transform: translateY(-30px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-30px);
+    }
+
+}
+
+#ghost_floaty_1{
+    animation-delay: .5s
+}
+#ghost_floaty_2{
+    animation-delay: 1.5s
+}
+#ghost_floaty_3{
+    animation-delay: 1s
+}
+#ghost_floaty_4{
+    animation-delay: 2s
+}
+
+@keyframes ghost_body_float {
+    0% {
+        transform: translateY(-30px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-30px);
+    }
+
+}
+

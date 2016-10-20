@@ -1,5 +1,5 @@
 /**
- * Created by Matt on 10/17/16.
+ * Created by ya boi on 10/17/16.
  */
 var buttons = document.getElementsByClassName('numericInput');//returns array of number buttons only
 var add = document.getElementById('add');
@@ -11,19 +11,16 @@ var clear = document.getElementById('clear');
 var operators = [add, subtract, multiply, divide];
 var displayedNumbers;
 var displayField = document.getElementById('displayField');
-var empty = "";
 
-//checking for which button is clicked
+
+//checking for which numeric button is clicked
 for (var i = 0; i < buttons.length; i++) {
      buttons[i].addEventListener('click', addCharactersToDisplay)
 }
+//checking for which operator is clicked
 for (var j = 0; j < operators.length; j++) {
     operators[j].addEventListener('click', addCharactersToDisplay)
 }
-
-console.log(operators);
-
-
 
 //changes display based on innerhtml of buttons
 function addCharactersToDisplay() {
