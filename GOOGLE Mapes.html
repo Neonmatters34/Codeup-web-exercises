@@ -17,23 +17,52 @@
 
 <!-- Script to show address on map -->
 <script type="text/javascript">
+
+
+
+
     (function() {
         "use strict";
+
+        var address = " 979 Springdale Rd #150, Austin, TX 78702";
+        var abp = new google.maps.LatLng(30.263179, -97.696478);
+        var geocoder = new google.maps.Geocoder();
+        var infowindow = new google.maps.InfoWindow({
+            content: "A climber's Playground."
+        });
+        geocoder.geocode ({"address": address}, function (results, status) {
+            if(status ==  google.maps.GeocoderStatus.OK){
+                map.setCenter(results[0].geometry.location);
+
+            }else {alert("Geocoding was not successful - STATUS: " + status);
+
+            }
+        });
 
         // Set our map options
         var mapOptions = {
             // Set the zoom level
-            zoom: 19,
+            zoom:  5,
 
             // This sets the center of the map at our location
-            center: {
-                lat:  29.426791,
-                lng: -98.489602
-            }
+            center: address
         };
 
         // Render the map
+
+
         var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: abp,
+            animation: google.maps.Animation.DROP,
+            title: "Austin Bouldering Project",
+
+        });
+        infowindow.open(map,marker);
+        marker.setMap(map);
     })();
+
+
 </script>
 </body>
