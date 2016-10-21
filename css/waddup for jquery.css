@@ -1,0 +1,33 @@
+html{
+    margin: 1rem;
+
+}
+
+.container{
+    padding: 1em;
+    margin: 2em;
+}
+p{
+    margin: auto;
+}
+
+#innerContainer{
+    padding: 2em;
+    width: 60%;
+    margin: 1em;
+    float: left;
+}
+
+#header{
+
+    text-align: center;
+}
+#listContainer{
+    padding: 0.5em;
+    margin: 1em;
+    width: 15%;
+    float: left;
+    border
+}
+ul{
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/waddup%20for%20jquery.css">
+    <title id="title">Sup Boi!?</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="codeup">Waddup</h1>
+        <div id="innerContainer">
+            <p class="codeup">
+                Your bones don't break, mine do.
+                That's clear. Your cells react to bacteria and viruses differently than mine.
+                You don't get sick, I do. That's also clear.
+                But for some reason, you and I react the exact same way to water.
+                We swallow it too fast, we choke. We get some in our lungs, we drown.
+                However unreal it may seem, we are connected, you and I.
+                We're on the same curve, just on opposite ends.</p>
+        </div>
+        <div id="listContainer">
+            <ul class="codeup">
+                <li>Spazzkid</li>
+                <li>Giraffage</li>
+                <li>Kero Kero Bonito</li>
+            </ul>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"
+>
+</script>
+<script>
+    $(document).ready(function () {
+        var contents = $('#header').html();
+        alert(contents);
+    });
+    var $codeup = $(".codeup");
+    $codeup.css({
+        'border': ('1px', 'solid'),
+        'border-color': 'red'
+    });
+
+    console.log($("#title").html());
+</script>
+</body>
+</html>
