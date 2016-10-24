@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquerey faq</title>
+    <style>
+        html{
+            font-family: Helvetica, sans-serif;
+        }
+        #hero{
+            background: url("https://upload.wikimedia.org/wikipedia/commons/d/d6/Half_Dome_from_Glacier_Point,_Yosemite_NP_-_Diliff.jpg") center no-repeat;
+            background-size: cover;
+            height: 100%;
+
+        }
+        #yosemite{
+            font-size: 4em;
+        }
+        #top{
+            color: white;
+            position: relative;
+            top: 40%;
+            text-shadow: #111111;
+            font-size: 1.5em;
+        }
+        dl{
+            display: inline;
+            margin: 1em;
+        }
+        dt, dd{
+            float: left;
+            margin: .1em;
+        }
+        .dt{
+            margin-right: 0em;
+            margin-left: 5.5em;
+            margin-bottom: 2em;
+
+        }
+        dd{
+            display: inline-block;
+        }
+        #stats{
+            margin: 1em;
+            position: relative;
+            left: %;
+        }
+        .invisible{
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css">
+
+</head>
+
+<body>
+<section id="hero">
+    <div id="top" class="text-center">
+        <h1 id="yosemite">Yosemite</h1>
+        <p>The iconic birthplace of American rock climbing and the most famous climbing area in the world.</p>
+    </div>
+</section>
+<div class="row">
+    <div id="stats">
+        <dl class="large-12 large-centered text-center">
+            <dt class="dt">Total routes</dt>
+            <dd class="stat invisible">1,492</dd>
+            <dt class="dt">Boulder routes</dt>
+            <dd class="stat invisible">184</dd>
+            <dt class="dt">Trad Routes</dt>
+            <dd class="stat invisible">1,085</dd>
+            <dt class="dt">Sport Routes</dt>
+            <dd class="stat invisible">202</dd>
+        </dl>
+    </div>
+</div>
+<div class="row">
+    <div class="large-12 large-centered text-center">
+        <button class="button" type="button">Spook 'em</button>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"
+>
+</script>
+
+<script>
+$(document).ready(function () {
+    $('button').click(function(){
+    $('dd').toggleClass('invisible')
+})})
+</script>
+</body>
+</html>
