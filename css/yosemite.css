@@ -1,0 +1,69 @@
+html{
+    font-family: Helvetica, sans-serif;
+}
+#hero{
+    background: url("https://upload.wikimedia.org/wikipedia/commons/d/d6/Half_Dome_from_Glacier_Point,_Yosemite_NP_-_Diliff.jpg") center no-repeat;
+    background-size: cover;
+    height: 100%;
+    z-index: -1;
+}
+#leftArticleImage{
+float: left;
+margin:1em;
+}
+#article{
+    float: left;
+    margin: 1em;
+}
+#yosemite{
+    font-size: 4em;
+    display: none;
+}
+#top{
+    color: white;
+    position: relative;
+    top: 20%;
+    text-shadow: 2px 2px 10px #111111;
+    font-size: 1.5em;
+}
+.button{
+    margin-top: 2.5em;
+    background-color: #D5E4F0;
+    color: #768FAF;
+}
+.dt{
+    display: inline;
+    margin: 0em 4em 0em 4em;
+}
+.stats{
+    font-size: .8em;
+    color: #F7D600;
+    text-shadow: 2px 2px 8px #333333;
+
+}
+.stats-color{
+    color: #F2DE60;
+}
+.stat{
+    display: inline;
+    margin: 0em 2.4em 0em 2.4em;
+
+}
+
+#stats{
+    position: relative;
+    top:20%;
+    margin-bottom: 2em;
+}
+.invisible{
+    display: none;
+}
+.one{
+    margin-bottom: 1em;
+}
+.bold{
+    font-weight: bold;
+}
+.orange{
+    color:#FFEF89;
+}

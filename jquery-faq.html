@@ -3,93 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <title>jquerey faq</title>
-    <style>
-        html{
-            font-family: Helvetica, sans-serif;
-        }
-        #hero{
-            background: url("https://upload.wikimedia.org/wikipedia/commons/d/d6/Half_Dome_from_Glacier_Point,_Yosemite_NP_-_Diliff.jpg") center no-repeat;
-            background-size: cover;
-            height: 100%;
-
-        }
-        #yosemite{
-            font-size: 4em;
-        }
-        #top{
-            color: white;
-            position: relative;
-            top: 40%;
-            text-shadow: #111111;
-            font-size: 1.5em;
-        }
-        dl{
-            display: inline;
-            margin: 1em;
-        }
-        dt, dd{
-            float: left;
-            margin: .1em;
-        }
-        .dt{
-            margin-right: 0em;
-            margin-left: 5.5em;
-            margin-bottom: 2em;
-
-        }
-        dd{
-            display: inline-block;
-        }
-        #stats{
-            margin: 1em;
-            position: relative;
-            left: %;
-        }
-        .invisible{
-            display: none;
-        }
-    </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css">
-
+    <link rel="stylesheet" href="css/yosemite.css">
+    <link rel="stylesheet" href="css/odometer.css">
 </head>
-
 <body>
-<section id="hero">
-    <div id="top" class="text-center">
-        <h1 id="yosemite">Yosemite</h1>
-        <p>The iconic birthplace of American rock climbing and the most famous climbing area in the world.</p>
-    </div>
-</section>
-<div class="row">
-    <div id="stats">
-        <dl class="large-12 large-centered text-center">
-            <dt class="dt">Total routes</dt>
-            <dd class="stat invisible">1,492</dd>
-            <dt class="dt">Boulder routes</dt>
-            <dd class="stat invisible">184</dd>
-            <dt class="dt">Trad Routes</dt>
-            <dd class="stat invisible">1,085</dd>
-            <dt class="dt">Sport Routes</dt>
-            <dd class="stat invisible">202</dd>
-        </dl>
-    </div>
-</div>
-<div class="row">
-    <div class="large-12 large-centered text-center">
-        <button class="button" type="button">Spook 'em</button>
-    </div>
-</div>
+    <section id="hero">
+        <div id="top" class="text-center">
+            <h1 id="yosemite">Yosemite</h1>
+            <p>The iconic birthplace of American rock climbing and the most famous climbing area in the world.</p>
+            <div class="row">
+                <div class="large-12 large-centered text-center">
+                    <button class="button" type="button">Spook 'em</button>
+                </div>
+            </div>
+            <hr>
+            <div class="row one">
+                <div id="statsText" class=" stats text-center">
+                    <p class="dt large-3 small-3">Total routes</p>
+                    <p class="dt large-3 small-3">Boulder routes</p>
+                    <p class="dt large-3 small-3">Trad Routes</p>
+                    <p class="dt large-3 small-3">Sport Routes</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="stats" class=" stats-color stats text-center">
+                    <p id="totalRoutesNumber" class="large-3 odometer-animating small-3 stat invisible">1,492</p>
+                    <p class="large-3 small-3 stat invisible">184</p>
+                    <p class="large-3 stat small-3  invisible">1,085</p>
+                    <p class="large-3 stat small-3 invisible">202</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="statsPart">
+        <div class="row">
+            <div id="leftArticleImage" class="large-4"><img src="http://cdn.allyosemite.com/images/content/12145_12425_El_Capitan_Yosemite_Park_md.jpg">
+            </div>
+            <div id="article" class="large-5">
+            Your bones don't break, mine do.
+            That's clear. Your cells react to bacteria and viruses differently than mine.
+            You don't get sick, I do. That's also clear.
+            But for some reason, you and I react the exact same way to water.
+            We swallow it too fast, we choke. We get some in our lungs, we drown.
+            However unreal it may seem, we are connected, you and I.
+            We're on the same curve, just on opposite ends.</div>
+        </div>
+
+    </section>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"
 >
 </script>
-
+<script src="js/odometer.js"></script>
 <script>
 $(document).ready(function () {
     $('button').click(function(){
-    $('dd').toggleClass('invisible')
-})})
+    $('.stat').toggleClass('invisible');
+})});
+$('#yosemite').fadeIn(1900);
+$( "#statsText p" ).first().addClass( "bold orange" );
 </script>
 </body>
 </html>
